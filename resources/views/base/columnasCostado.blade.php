@@ -78,12 +78,7 @@
           <ul class="nav flex-column sub-menu">
             <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
             <li class="nav-item"> <a class="nav-link" href="pages/charts/morris.html">Morris</a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/charts/flot-chart.html">Flot</a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/charts/google-charts.html">Google charts</a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/charts/sparkline.html">Sparkline js</a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/charts/c3.html">C3 charts</a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/charts/chartist.html">Chartists</a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/charts/justGage.html">JustGage</a></li>
+ 
           </ul>
           </div>
       </li>
@@ -115,51 +110,9 @@
           <span class="menu-title">Proveedores</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
-          <i class="fa fa-stop-circle menu-icon"></i>
-          <span class="menu-title">Icons</span>
-          <i class="menu-arrow"></i>
-        </a>
-        <div class="collapse" id="icons">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="pages/icons/flag-icons.html">Flag icons</a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/icons/font-awesome.html">Font Awesome</a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/icons/simple-line-icon.html">Simple line icons</a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/icons/themify.html">Themify icons</a></li>
-          </ul>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" href="#maps" aria-expanded="false" aria-controls="maps">
-          <i class="fas fa-map-marker-alt menu-icon"></i>
-          <span class="menu-title">Usuarios</span>
-          <i class="menu-arrow"></i>
-        </a>
-        <div class="collapse" id="maps">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="pages/maps/mapeal.html">Mapeal</a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/maps/vector-map.html">Vector Map</a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/maps/google-maps.html">Google Map</a></li>
-          </ul>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-          <i class="fas fa-window-restore menu-icon"></i>
-          <span class="menu-title">Configuracion</span>
-          <i class="menu-arrow"></i>
-        </a>
-        <div class="collapse" id="auth">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/samples/login-2.html"> Login 2 </a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/samples/register-2.html"> Register 2 </a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> Lockscreen </a></li>
-          </ul>
-        </div>
-      </li>
+
+ 
+  
       <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="https://www.youtube.com/watch?v=Gm7Q_qmFTaY&list=RDGm7Q_qmFTaY&start_radio=1" aria-expanded="false" aria-controls="error">
           <i class="fas fa-exclamation-circle menu-icon"></i>
