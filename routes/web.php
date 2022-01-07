@@ -26,10 +26,10 @@ Auth::routes();
 
 //Route::resource('categories', HomeController::class);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('personas', PersonaController::class);
-/*
+/**/
 Route::group(['middleware' => 'auth'], function () {
-    Route::get('/', [HomeController::class, 'index'])->name('home');
-});*/
+    Route::get('/', [PersonaController::class, 'index'])->name('home');
+});

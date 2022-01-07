@@ -15,7 +15,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{{route('personas.index')}}">
                           <i class="fas fa-minus-square menu-icon"></i>
                           <span class="menu-title">Persona</span>
                         </a>

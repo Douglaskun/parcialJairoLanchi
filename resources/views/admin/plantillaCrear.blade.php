@@ -36,10 +36,10 @@
 @section('content')
 <div class="container">
 
-   <form action="{{route('clientes.store')}}" method="post" enctype="multipart/form-data">
+   <form action="{{route('personas.store')}}" method="post" enctype="multipart/form-data">
    @csrf
    
-   @include('admin.clients.crearEditar',['modo'=>'Crear']);  
+   @include('admin.crearEditar',['modo'=>'Crear']);  
    
    </form>
  </div> 

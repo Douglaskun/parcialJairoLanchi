@@ -13,7 +13,7 @@ class UpdatePersonaRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -25,6 +25,13 @@ class UpdatePersonaRequest extends FormRequest
     {
         return [
             //
+            
+            'dni' => ['required','max:8 ','unique:personas,dni,' . request()->route('persona')->id],
+            'telefono' => "|string|max:255",
+            'celular' => ['required','max:255 '],
+            'nombre' => 'required|string|max:50',
+            'apellido' => 'required|string|max:50',
+           
         ];
     }
 }

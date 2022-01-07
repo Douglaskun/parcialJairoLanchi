@@ -22,7 +22,7 @@
 @section('table')
 <div class="page-header">
     <h3 class="page-title">
-      Clientes
+      Persona
     </h3>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -36,10 +36,10 @@
 @section('content')
 <div class="container">
 
-   <form action="{{url('/clientes/'.$cliente->id)}}" method="post" enctype="multipart/form-data">
+   <form action="{{url('/personas/'.$persona->id)}}" method="post" enctype="multipart/form-data">
    @csrf
    {{method_field('PATCH')}}
-   @include('admin.clients.crearEditar',['modo'=>'Editar']);  
+   @include('admin.crearEditar',['modo'=>'Editar']);  
    
    </form>
  </div> 
@@ -53,7 +53,7 @@
      <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
 
      <script>
-         $('#clientes').DataTable({});
+         $('#personas').DataTable({});
      </script>
     
 @endsection  

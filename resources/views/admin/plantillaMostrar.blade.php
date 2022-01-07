@@ -50,7 +50,6 @@
                 <th>ID</th>
                 <th>DNI</th>
                 <th>Telefono</th>
-                <th>RUC</th>
                 <th>Celular</th>
                 <th>Nombre</th>
                 <th>Apellido</th>

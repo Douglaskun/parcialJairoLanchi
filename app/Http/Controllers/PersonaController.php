@@ -16,6 +16,8 @@ class PersonaController extends Controller
     public function index()
     {
         //
+        $personas = Persona::all();
+        return view("admin.plantillaMostrar", compact("personas"));
         
     }
 
@@ -27,6 +29,8 @@ class PersonaController extends Controller
     public function create()
     {
         //
+        $personas = Persona::all();
+        return view("admin.plantillaCrear", compact("personas"));
     }
 
     /**
@@ -38,6 +42,12 @@ class PersonaController extends Controller
     public function store(StorePersonaRequest $request)
     {
         //
+        $datosPersona = request()->except('_token');
+
+        
+        Persona::insert($datosPersona);
+       // return response()->json($datosEmpleado);
+       return redirect()->route("personas.index")->with('mensaje','Cliente Agregado con Exito');
     }
 
     /**
@@ -57,9 +67,11 @@ class PersonaController extends Controller
      * @param  \App\Models\Persona  $persona
      * @return \Illuminate\Http\Response
      */
-    public function edit(Persona $persona)
+    public function edit($id)
     {
         //
+        $persona=Persona::findOrFail($id);
+        return view("admin.plantillaEditar", compact("persona"));
     }
 
     /**
@@ -72,6 +84,10 @@ class PersonaController extends Controller
     public function update(UpdatePersonaRequest $request, Persona $persona)
     {
         //
+        $datosPersona = request()->except(['_token','_method']);
+        // Cliente::where('id','=', $id)->update($datosCliente);
+         $persona->update($datosPersona);
+         return redirect()->route("personas.index");
     }
 
     /**
@@ -83,5 +99,7 @@ class PersonaController extends Controller
     public function destroy(Persona $persona)
     {
         //
+        $persona->delete();
+        return redirect()->route("personas.index");
     }
 }

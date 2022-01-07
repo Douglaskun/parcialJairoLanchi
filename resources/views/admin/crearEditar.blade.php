@@ -36,7 +36,7 @@
  <div class="form-group">
     <label for="nombre">  Nombre </label>
     <input type="text" class="form-control" name="nombre" 
-           value="{{isset($persona->adress)?$persona->nombre:old('nombre')}}" id="nombre">
+           value="{{isset($persona->nombre)?$persona->nombre:old('nombre')}}" id="nombre">
     <br>
  </div>
 
