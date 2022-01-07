@@ -95,6 +95,8 @@
                                 </div>
                                 <div class="dropdown-content-body">
                                     <ul>
+
+                                        @yield('barra')
                                         <li>
                                             <a href="javascript:void()">
                                                 <span class="mr-3 avatar-icon bg-success-lighten-2"><i class="icon-present"></i></span>

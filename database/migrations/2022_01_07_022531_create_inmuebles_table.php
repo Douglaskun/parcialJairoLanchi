@@ -15,6 +15,7 @@ class CreateInmueblesTable extends Migration
     {
         Schema::create('inmuebles', function (Blueprint $table) {
             $table->id();
+           
             $table->timestamps();
         });
     }

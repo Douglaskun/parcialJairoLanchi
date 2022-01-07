@@ -1,7 +1,7 @@
-@extends('admin.categories.create')
+@extends('base.index')
 
 <!--  layouts.admin -->
-@section('title', " Crear Clientes")
+@section('title', " Crear Persona")
 
 @section('styles')
     
@@ -22,7 +22,7 @@
 @section('table')
 <div class="page-header">
     <h3 class="page-title">
-      Categorias
+      Persona
     </h3>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -53,7 +53,7 @@
      <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
 
      <script>
-         $('#clientes').DataTable({});
+         $('#personas').DataTable({});
      </script>
     
 @endsection  

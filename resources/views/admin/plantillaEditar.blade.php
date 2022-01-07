@@ -1,7 +1,7 @@
-@extends('admin.categories.create')
+@extends('base.index')
 
 <!--  layouts.admin -->
-@section('title', " Editar Cliente")
+@section('title', " Editar Persona")
 
 @section('styles')
     

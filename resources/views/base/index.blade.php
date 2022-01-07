@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Quixlab - Bootstrap Admin Dashboard Template by Themefisher.com</title>
+    <title>@yield('title')</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
     <!-- Pignose Calender -->
@@ -19,7 +20,7 @@
     <!-- Custom Stylesheet 
    
     <link href="css/style.css" rel="stylesheet">-->
-
+    @yield('styles')
 </head>
 
 <body>
@@ -65,6 +66,8 @@
         <!--**********************************
             Content body start
         ***********************************-->
+
+       
         @include('base.ContentBody')
         <!--**********************************
             Content body end
@@ -133,10 +136,8 @@
     {!! Html::script('quixlab/themes/quixlab/js/dashboard/dashboard-1.js') !!}
   <!--  <script src="./plugins/chartist/js/chartist.min.js"></script>
     <script src="./plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
-
-
-
     <script src="./js/dashboard/dashboard-1.js"></script>-->
+    @yield('scripts')
 
 </body>
 

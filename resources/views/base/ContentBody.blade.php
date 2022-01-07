@@ -3,6 +3,20 @@
         ***********************************-->
         <div class="content-body">
 
+            <div class="content-wrapper">
+                @yield('table')
+                <div class="card">
+                  <div class="card-body">
+                   
+                    <!-- Tabla inicio -->
+                    @yield('content')
+  
+                    
+                    <!-- Tabla Final -->
+                  </div>
+                </div>
+             </div>
+
             <div class="container-fluid mt-3">
                 <div class="row">
                     <div class="col-lg-3 col-sm-6">

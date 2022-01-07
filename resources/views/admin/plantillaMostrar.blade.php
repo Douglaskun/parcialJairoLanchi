@@ -1,7 +1,7 @@
-@extends('admin.categories.create')
+@extends('base.index')
 
 <!--  layouts.admin -->
-@section('title', "Clientes")
+@section('title', "Persona")
 
 @section('styles')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
@@ -10,8 +10,8 @@
 
 @section('barra')
   <li class="nav-item d-none d-lg-flex">
-    <a class="nav-link" href="{{route('clientes.create')}}">
-      <span class="btn btn-primary">Crear Clientes</span>
+    <a class="nav-link" href="{{route('personas.create')}}">
+      <span class="btn btn-primary">Crear Personas</span>
     </a>
   </li>
 @endsection
@@ -32,7 +32,7 @@
 @section('table')
 <div class="page-header">
     <h3 class="page-title">
-      Clientes
+      Persona
     </h3>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -44,38 +44,37 @@
 @endsection
 
 @section('content')
-    <table class="table table-striped" id="clientes" >
+    <table class="table table-striped" id="personas" >
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Name</th>
                 <th>DNI</th>
+                <th>Telefono</th>
                 <th>RUC</th>
-                <th>Direccion</th>
                 <th>Celular</th>
-                <th>Correo</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
                 <th>Accion</th>
             </tr>
         </thead>
         
         
         <tbody>
-            @foreach ($clientes as $cliente)
+            @foreach ($personas as $persona)
                 <tr>
-                    <td>{{$cliente->id}}</td>
-                    <td>{{$cliente->name}}</td>
-                    <td>{{$cliente->dni}}</td>
-                    <td>{{$cliente->ruc}}</td>
-                    <td>{{$cliente->adress}}</td>
-                    <td>{{$cliente->phone}}</td>
-                    <td>{{$cliente->email}}</td>
+                    <td>{{$persona->id}}</td>
+                    <td>{{$persona->dni}}</td>
+                    <td>{{$persona->telefono}}</td>
+                    <td>{{$persona->celular}}</td>
+                    <td>{{$persona->nombre}}</td>
+                    <td>{{$persona->apellido}}</td>
                     <td>
-                        <a href="{{url('/clientes/'.$cliente->id.'/edit')}}" class="btn btn-warning">
+                        <a href="{{url('/personas/'.$persona->id.'/edit')}}" class="btn btn-warning">
                             Editar | 
                         </a> 
                          
      
-                     <form action="{{url('/clientes/'.$cliente->id)}}" class="d-inline" method="POST">
+                     <form action="{{url('/personas/'.$persona->id)}}" class="d-inline" method="POST">
                      @csrf
                      {{method_field('DELETE')}}
                      <input class="btn btn-danger" type="submit" onclick="return confirm('¿Quieres borrar?')" value="Borrar">
@@ -97,7 +96,7 @@
      <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
 
      <script>
-         $('#clientes').DataTable({});
+         $('#personas').DataTable({});
      </script>
     
 @endsection  
